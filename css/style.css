@@ -132,6 +132,11 @@ a:hover{
     grid-area: t3;
 }
 
+.todas_fotos_home div img:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
 
 
 /* PAGE NEW */
@@ -183,6 +188,11 @@ a:hover{
     grid-area: texto;
 }
 
+.section__new div:hover{
+    transform: scale(1.2, 1.2);
+    transition: all 2s;
+}
+
 
 /* PAGE ABOUT */ 
 
@@ -224,6 +234,20 @@ a:hover{
     grid-area: texto;
 }
 
+.section__about div{
+    animation: cambioColor 4s;
+}
+
+@keyframes cambioColor {
+    0%{
+         background-color: darkslategrey;
+    }
+    15%{
+        background-color: rgb(24, 43, 43);
+    }
+}
+
+
 
 /*PAGE PRODUCTOS*/
 
@@ -259,6 +283,10 @@ display: grid;
 grid-template-columns: auto auto auto;
 }
 
+.section__productos div:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
 
 
 
