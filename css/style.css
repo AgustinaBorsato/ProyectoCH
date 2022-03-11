@@ -148,7 +148,7 @@ a:hover{
     height: 300px;
 }
 
-.section__new div p {
+.section__new div  p {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -164,11 +164,11 @@ a:hover{
     color: rgb(39, 180, 39);
     text-align: center;
 }
-
-/*.section__new{
+/*
+.section__new{
     display: grid;
     grid-template-columns: auto auto;
-}
+} */
 
 .section__new div{
     display: grid;
@@ -187,12 +187,13 @@ a:hover{
 
 .section__new div p{
     grid-area: texto;
-} */
+} 
 
+/*
 .section__new div:hover{
     transform: scale(1.2, 1.2);
     transition: all 2s;
-}
+} */
 
 
 /* PAGE ABOUT */ 
@@ -252,39 +253,41 @@ a:hover{
 
 /*PAGE PRODUCTOS*/
 
-.section__productos{
+.section__productos div{
     display: flex;
     flex-flow: row wrap;
 }
 
-.section__productos div p{
+.section__productos div div p{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.section__productos div {
+.section__productos div div {
     background-color: rgb(236, 236, 236);
     margin: 20px;
 }
 
-.section__productos div img{
- width: 400px;
- height: 300px;
+.section__productos div div img{
+ width: 250px;
+ height: 200px;
 }
+
 
 .container__prod{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin:25px;
+    
 }
-
+/*
 .section__productos{
 display: grid;    
 grid-template-columns: auto auto auto;
-}
+} */
 
-.section__productos div:hover{
+.section__productos div div:hover{
     transform: scale(1.1);
     transition: all 2s;
 }
@@ -364,3 +367,73 @@ grid-template-columns: auto auto auto;
     display: inline-block; 
 }
 
+@media (max-width: 480px){
+ 
+  /*   NEW  */ 
+
+.section__new{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto  auto auto auto;
+}
+
+.section__new div img{
+    width: 400px;
+    height: 250px;
+}
+
+.section__new div{
+    display: grid;
+    grid-template-areas: "titulo"
+                          "foto"
+                          "texto";
+
+}
+}
+
+
+@media (min-width:481px) and (max-width: 768px){
+    HOME
+    .fotos__inicio .fotoP .foto__inicio{
+     height: 30%;
+     width: 98%;
+ }
+
+
+.fotos__inicio .todas_fotos_home{
+    display: grid;
+    grid-template-areas:"foto1 foto2 "
+                        "t1 t2"
+                        "foto3 foto3"
+                         "t3 t3";
+ justify-content: center;
+ grid-column-gap: 10px;
+}
+ .fotos__inicio .todas_fotos_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+
+ /* NEW */
+
+.section__new{
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: auto  auto auto auto;
+}
+
+.section__new div img{
+ width: 400px;
+ height: 250px;
+}
+
+.section__new div{
+ display: grid;
+ grid-template-areas: "titulo"
+                       "foto"
+                       "texto";
+
+}
+}
