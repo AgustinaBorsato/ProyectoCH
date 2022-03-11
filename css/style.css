@@ -50,7 +50,7 @@ a:hover{
 
 }
  
-.container {
+.container_f {
     color: darkslategrey;
     font-size: 16px;
     border: 3px solid darkslategrey;
@@ -64,6 +64,7 @@ a:hover{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgreen;
+    margin: 40px;
 }
 
 .links {
@@ -98,7 +99,7 @@ a:hover{
     flex-direction: row;
     justify-content: center;
 } */
-
+/*  GRID
 .todas_fotos_home{
     display: grid;
    grid-template-areas: "foto1 foto2 foto3"
@@ -130,7 +131,7 @@ a:hover{
 
 .todas_fotos_home .div__margin3 a{
     grid-area: t3;
-}
+} */
 
 .todas_fotos_home div img:hover{
     transform: scale(1.2);
@@ -164,7 +165,7 @@ a:hover{
     text-align: center;
 }
 
-.section__new{
+/*.section__new{
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -186,7 +187,7 @@ a:hover{
 
 .section__new div p{
     grid-area: texto;
-}
+} */
 
 .section__new div:hover{
     transform: scale(1.2, 1.2);
@@ -363,149 +364,3 @@ grid-template-columns: auto auto auto;
     display: inline-block; 
 }
 
-/*RESPONSIVE*/
-   /*MOBILE*/
-
-@media (max-width: 480px){
-    /*HOME*/
-    .fotos__inicio .fotoP .foto__inicio{
-        height: 300px;
-        width: 480px;
-    }
-
-   .fotos__inicio .todas_fotos_home{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-   }
-     /*NEW*/
-
-.section__new{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto  auto auto auto;
-}
-
-.section__new div img{
-    width: 400px;
-    height: 250px;
-}
-
-.section__new div{
-    display: grid;
-    grid-template-areas: "titulo"
-                          "foto"
-                          "texto";
-
-}
-
-/*ABOUT*/
-
-.section__about div{
-    display: grid;
-    grid-template-areas: "foto"
-                         "texto";
- justify-content: center;
- align-content: center;
-}
-
-/*PRODUCTOS*/
-
-.section__productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:25px;
-}
-
-/*SUSTENTABILIDAD*/
-
-.section__sus{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:25px;
-}
-
-}
-
-/*TABLET EN VERTICAL*/
-
-@media (min-width:481px) and (max-width: 768px){
-       /*HOME*/
-       .fotos__inicio .fotoP .foto__inicio{
-        height: 30%;
-        width: 98%;
-    }
-
-  /* .fotos__inicio .todas_fotos_home{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-   } */ 
-
-   .fotos__inicio .todas_fotos_home{
-       display: grid;
-       grid-template-areas:"foto1 foto2 "
-                           "t1 t2"
-                           "foto3 foto3"
-                            "t3 t3";
-    justify-content: center;
-    grid-column-gap: 10px;
-   }
-
-  
-     /*NEW*/
-
-.section__new{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto  auto auto auto;
-}
-
-.section__new div img{
-    width: 400px;
-    height: 250px;
-}
-
-.section__new div{
-    display: grid;
-    grid-template-areas: "titulo"
-                          "foto"
-                          "texto";
-
-}
-
-/*ABOUT*/
-
-.section__about div{
-    display: grid;
-    grid-template-areas: "foto"
-                         "texto";
- justify-content: center;
- align-content: center;
-}
-
-/*PRODUCTOS*/
-
-.section__productos{
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-column-gap: 10px;
-    justify-content: center;
-    align-content: center;
-}
-
-.section__productos div img{
-    width: 300px;
-}
-
-/*SUSTENTABILIDAD*/
-
-.section__sus{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:25px;
-}
-}
