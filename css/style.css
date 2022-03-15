@@ -151,6 +151,7 @@ a:hover{
 .section__new div  p {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 /*
@@ -171,15 +172,11 @@ a:hover{
     grid-template-columns: auto auto;
 } */
 
-.section__new .container .row {
+.section__new .container2 .row2 {
     background-color: lightgray;
     margin: 20px;
 }
 
-.section__new   .row2{
-    background-color: lightgray;
-    margin: 20px;
-}
 
 
 .section__new div{
